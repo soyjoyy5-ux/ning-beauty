@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==============================
+   GLOBAL FIX (Bootstrap conflict)
+================================ */
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+}
+
+/* ==============================
+   LAYOUT ADMIN
+================================ */
+.card-admin {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100;
+}
+
+.table-admin th {
+    @apply text-sm font-semibold text-gray-600 uppercase tracking-wide;
+}
+
+.table-admin td {
+    @apply text-sm text-gray-700;
+}
+
+/* ==============================
+   BUTTON SYSTEM (ADMIN)
+================================ */
+
+/* Primary Pink */
+.btn-pink {
+    @apply inline-flex items-center gap-2
+           bg-pink-500 hover:bg-pink-600
+           text-white font-medium
+           px-5 py-2
+           rounded-lg shadow-sm
+           transition;
+}
+
+/* Edit / Primary */
+.btn-edit {
+    @apply inline-flex items-center justify-center
+           bg-blue-500 hover:bg-blue-600
+           text-white
+           px-3 py-1.5
+           rounded-md
+           text-sm font-medium
+           transition;
+}
+
+/* Delete / Danger */
+.btn-delete {
+    @apply inline-flex items-center justify-center
+           bg-red-500 hover:bg-red-600
+           text-white
+           px-3 py-1.5
+           rounded-md
+           text-sm font-medium
+           transition;
+}
+
+/* Secondary */
+.btn-secondary {
+    @apply inline-flex items-center justify-center
+           bg-gray-200 hover:bg-gray-300
+           text-gray-700
+           px-4 py-2
+           rounded-lg
+           text-sm font-medium
+           transition;
+}
+
+/* ==============================
+   STATUS BADGE
+================================ */
+.badge-active {
+    @apply inline-flex items-center
+           px-3 py-1
+           text-xs font-medium
+           rounded-full
+           bg-green-100 text-green-700;
+}
+
+.badge-inactive {
+    @apply inline-flex items-center
+           px-3 py-1
+           text-xs font-medium
+           rounded-full
+           bg-gray-200 text-gray-600;
+}
+
+/* ==============================
+   FORM ELEMENTS
+================================ */
+.input-admin {
+    @apply w-full
+           border border-gray-300
+           rounded-lg
+           px-4 py-2
+           focus:outline-none
+           focus:ring-2 focus:ring-pink-400
+           focus:border-pink-400;
+}
+
+.label-admin {
+    @apply block mb-1
+           text-sm font-semibold
+           text-gray-700;
+}
+
+/* ==============================
+   NAV & SIDEBAR
+================================ */
+.sidebar-link {
+    @apply flex items-center gap-2
+           px-3 py-2
+           rounded-lg
+           text-gray-700
+           hover:bg-pink-50 hover:text-pink-600
+           transition;
+}
+
+.sidebar-link-active {
+    @apply bg-pink-100 text-pink-600 font-semibold;
+}
+body {
+    @apply bg-gray-50;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
